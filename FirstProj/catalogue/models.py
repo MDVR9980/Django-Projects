@@ -77,4 +77,3 @@ class ProductAttributeValue(models.Model):
 
     def __str__(self):
         return f"{self.product}({self.attribute}): {self.value}"
-
