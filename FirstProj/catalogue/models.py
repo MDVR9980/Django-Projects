@@ -57,8 +57,8 @@ class Product(models.Model):
     title = models.CharField(max_length=32)
     description = models.TextField(blank=True)
 
-    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='products_cat')
-    brand = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='products_brand')
+    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='products')
+    brand = models.ForeignKey(Brand, on_delete=models.PROTECT, related_name='products')
 
     def __str__(self):
         return self.title
