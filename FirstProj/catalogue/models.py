@@ -61,6 +61,8 @@ class Product(models.Model):
     title = models.CharField(max_length=32)
     description = models.TextField(blank=True)
 
+    is_active = models.BooleanField(default=True)
+
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='products')
     brand = models.ForeignKey(Brand, on_delete=models.PROTECT, related_name='products')
 
