@@ -4,7 +4,6 @@ from catalogue.models import Product, Category, Brand, ProductType
 
 
 def products_list(request):
-    products = Product.objects.all()
 
     # products = Product.objects.filter(is_active=True)
     # products = Product.objects.exclude(is_active=False)
@@ -28,7 +27,8 @@ def products_list(request):
 
     # Product.objects.filter(is_active=True, category=category).filter(brand=brand)
 
-    context = "\n".join([f"{product.title}, {product.upc}" for product in products])
+    products = Product.objects.select_related('category').all()
+    context = "\n".join([f"{product.title}, {product.upc}, {product.category.name}" for product in products])
     return HttpResponse(context)
 
 
@@ -46,3 +46,16 @@ def product_detail(request, pk):
         return HttpResponse(f"title: {product.title}")
     return HttpResponse("Product does not exist")
 
+
+def categury_products(request, pk):
+    try:
+        categury = Category.objects.prefetch_related('products').get(pk=pk)
+    except Category.DoesNotExist:
+        return HttpResponse("")
+    products = categury.products.all()
+    product_ids = [1, 2, 3]
+    products = Product.objects.filter(id__in=product_ids)
+    # products = Product.objects.filter(category=categury)
+
+    context = "\n".join([f"{product.title}, {product.upc}" for product in products])
+    return HttpResponse(context)
