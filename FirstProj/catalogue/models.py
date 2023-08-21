@@ -1,6 +1,11 @@
 from django.db import models
 
 
+class MyManager(models.Manager):
+    def get_queryset(self, *args, **kwargs):
+        return super().get_queryset(*args, **kwargs).filter(is_active=True)
+
+
 class ProductType(models.Model):
     title = models.CharField(max_length=32, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
@@ -65,6 +70,9 @@ class Product(models.Model):
 
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='products')
     brand = models.ForeignKey(Brand, on_delete=models.PROTECT, related_name='products')
+
+    objects = MyManager()
+    default_manager = models.Manager()
 
     def __str__(self):
         return self.title
