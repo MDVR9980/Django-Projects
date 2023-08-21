@@ -1,6 +1,10 @@
+from django.contrib.auth.decorators import login_required, user_passes_test
 from django.db.models import Q
 from django.http import HttpResponse
+from django.views.decorators.http import require_http_methods, require_GET, require_POST
+
 from catalogue.models import Product, Category, Brand, ProductType
+from catalogue.utils import check_is_active, check_is_staff
 
 
 def products_list(request):
@@ -64,8 +68,8 @@ def categury_products(request, pk):
 def products_search(request):
     title = request.GET.get('q')
 
-    products = Product.objects.filter(
-        is_active=True, title__icontains=title,
+    products = Product.objects.actives(
+        title__icontains=title,
         category__name__icontains=title, category__is_active=True
     )  # title__istartswith=title,
     # products = Product.objects.filter(is_active=True).filter(
@@ -74,3 +78,22 @@ def products_search(request):
     context = "\n".join([f"{product.title}, {product.upc}" for product in products])
 
     return HttpResponse(f"Search page:\n{context}")
+
+
+@login_required()
+@require_http_methods(request_method_list=['GET', 'POST'])
+@user_passes_test(check_is_active)
+# @user_passes_test(check_is_staff)
+@user_passes_test(lambda u: u.is_staff)
+def user_profile(request):
+    if check_is_active(request.user):
+        return HttpResponse(f"Hello {request.user.username}")
+
+
+@login_required()
+# @require_GET
+@require_POST
+@user_passes_test(lambda u: u.score > 20)
+@user_passes_test(lambda u: u.age > 14)
+def wallet(request):
+    pass

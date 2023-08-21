@@ -1,9 +1,17 @@
 from django.db import models
 
 
-class MyManager(models.Manager):
+class IsActiveManager(models.Manager):
     def get_queryset(self, *args, **kwargs):
-        return super().get_queryset(*args, **kwargs).filter(is_active=True)
+        return super().get_queryset(*args, **kwargs).select_related('category', 'brand')
+
+    def actives(self, *args, **kwargs):
+        return self.get_queryset(*args, **kwargs).filter(as_active=True)
+
+
+class IsActiveCategoryManager(models.Manager):
+    def get_queryset(self, *args, **kwargs):
+        return super().get_queryset(*args, **kwargs).filter(category__is_active=True)
 
 
 class ProductType(models.Model):
@@ -71,8 +79,9 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='products')
     brand = models.ForeignKey(Brand, on_delete=models.PROTECT, related_name='products')
 
-    objects = MyManager()
     default_manager = models.Manager()
+    objects = IsActiveManager()
+    is_active_category_manager = IsActiveCategoryManager()
 
     def __str__(self):
         return self.title
