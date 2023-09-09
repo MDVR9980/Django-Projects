@@ -82,9 +82,12 @@ def products_search(request):
 
 @login_required()
 @require_http_methods(request_method_list=['GET', 'POST'])
+# @require_GET
+# @require_POST
 @user_passes_test(check_is_active)
 # @user_passes_test(check_is_staff)
 @user_passes_test(lambda u: u.is_staff)
+# @user_passes_test(lambda u: u.is_staff, login_url ='')
 def user_profile(request):
     if check_is_active(request.user):
         return HttpResponse(f"Hello {request.user.username}")
@@ -95,5 +98,5 @@ def user_profile(request):
 @require_POST
 @user_passes_test(lambda u: u.score > 20)
 @user_passes_test(lambda u: u.age > 14)
-def wallet(request):
+def campaign(request):
     pass
