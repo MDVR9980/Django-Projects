@@ -113,6 +113,11 @@ class UserScore(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     score = models.PositiveSmallIntegerField()
 
+    class Meta:
+        permissions = [
+            ('has_score_permission', "has score permission")
+        ]
+
     @classmethod
     def change_score(cls, user, score):
         instance = cls.objects.select_for_update().filter(user=user)

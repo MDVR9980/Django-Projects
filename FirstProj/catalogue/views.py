@@ -1,4 +1,4 @@
-from django.contrib.auth.decorators import login_required, user_passes_test
+from django.contrib.auth.decorators import login_required, user_passes_test, permission_required
 from django.db.models import Q
 from django.http import HttpResponse
 from django.views.decorators.http import require_http_methods, require_GET, require_POST
@@ -88,6 +88,7 @@ def products_search(request):
 # @user_passes_test(check_is_staff)
 @user_passes_test(lambda u: u.is_staff)
 # @user_passes_test(lambda u: u.is_staff, login_url ='')
+@permission_required('transaction.has_score_permission')
 def user_profile(request):
     if check_is_active(request.user):
         return HttpResponse(f"Hello {request.user.username}")
