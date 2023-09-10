@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required, user_passes_test, permission_required
 from django.db.models import Q
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.views.decorators.http import require_http_methods, require_GET, require_POST
 from django.shortcuts import render
 from catalogue.models import Product, Category, Brand, ProductType
@@ -51,7 +51,8 @@ def product_detail(request, pk):
         product = queryset.first()
     #     return HttpResponse(f"title: {product.title}")
     # return HttpResponse("Product does not exist")
-
+        return render(request, 'catalogue/product_detail.html', {"product": product})
+    raise Http404
 
 def categury_products(request, pk):
     try:
