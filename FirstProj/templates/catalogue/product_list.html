@@ -8,9 +8,9 @@
     <h3>Hello {{request.user.username}}</h3>
 
     {% for product in products %}
-        <a href="{% url 'product-detail' product.pk %}">
-            {{ product.title }}
-        </a>
+        <a href="{% url 'product-detail' product.pk %}">{{ product.title }}</a>
+        <h4>({% if product.is_active %} Available {% else %} Not available{% endif %})</h4>
+        <h4>${{ product.stock.price }}</h4>
         <br>
     {% endfor %}
 </body>
