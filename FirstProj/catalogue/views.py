@@ -2,7 +2,7 @@ from django.contrib.auth.decorators import login_required, user_passes_test, per
 from django.db.models import Q
 from django.http import HttpResponse
 from django.views.decorators.http import require_http_methods, require_GET, require_POST
-
+from django.shortcuts import render
 from catalogue.models import Product, Category, Brand, ProductType
 from catalogue.utils import check_is_active, check_is_staff
 
@@ -31,9 +31,11 @@ def products_list(request):
 
     # Product.objects.filter(is_active=True, category=category).filter(brand=brand)
 
-    products = Product.objects.select_related('category').all()
-    context = "\n".join([f"{product.title}, {product.upc}, {product.category.name}" for product in products])
-    return HttpResponse(context)
+    context = dict()
+    context['products'] = Product.objects.select_related('category').all()
+    # context = "\n".join([f"{product.title}, {product.upc}, {product.category.name}" for product in products])
+    # return HttpResponse(context)
+    return render(request, 'catalogue/product_list.html', context=context)
 
 
 def product_detail(request, pk):
@@ -47,8 +49,8 @@ def product_detail(request, pk):
     queryset = Product.objects.filter(is_active=True).filter(Q(pk=pk) | Q(upc=pk))
     if queryset.exists():
         product = queryset.first()
-        return HttpResponse(f"title: {product.title}")
-    return HttpResponse("Product does not exist")
+    #     return HttpResponse(f"title: {product.title}")
+    # return HttpResponse("Product does not exist")
 
 
 def categury_products(request, pk):

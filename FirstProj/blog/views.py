@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+# from django.shortcuts import render
 
 
 def post_list(request, year=None, month=None):
@@ -17,3 +17,7 @@ def categories_list(request):
 
 def post_detail(request, post_title):
     return HttpResponse(f'Post detail {post_title}')
+
+
+def custom_post_detail(request):
+    return HttpResponse(f"Custom Post detail")
