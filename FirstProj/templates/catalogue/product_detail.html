@@ -1,12 +1,12 @@
 {% extends 'catalogue/base_catalogue.html' %}
 
 {% block title %}
-    {{ product.title }}
+    {{ product.title|title }}
 {% endblock %}
 
 {% block data %}
     <h3>{{ product.title }}</h3>
-    <p>{{ product.description }}</p>
+    <p>{{ product.description|truncatewords:10 }}</p>
     <p>${{ product.stock.price }}</p>
 {% endblock %}
 
