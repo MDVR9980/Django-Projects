@@ -54,15 +54,16 @@ def product_detail(request, pk):
         return render(request, 'catalogue/product_detail.html', {"product": product})
     raise Http404
 
-def categury_products(request, pk):
+
+def category_products(request, pk):
     try:
-        categury = Category.objects.prefetch_related('products').get(pk=pk)
+        category = Category.objects.prefetch_related('products').get(pk=pk)
     except Category.DoesNotExist:
         return HttpResponse("")
-    products = categury.products.all()
+    products = category.products.all()
     product_ids = [1, 2, 3]
     products = Product.objects.filter(id__in=product_ids)
-    # products = Product.objects.filter(category=categury)
+    # products = Product.objects.filter(category=category)
 
     context = "\n".join([f"{product.title}, {product.upc}" for product in products])
     return HttpResponse(context)

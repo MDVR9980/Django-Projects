@@ -3,5 +3,5 @@
 {% get_category as categories %}
 
 {% for category in categories %}
-    <p>{{ category }}</p>
+    <a href="{{ category.get_absolute_url }}" class="nav-bar-items"><p>{{ category }}</p></a>
 {% endfor %}
