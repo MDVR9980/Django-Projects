@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block data %}
+    <img src="{{ product.images.all.0.image.url }}" alt="django image">
     <h3>{{ product.title }}</h3>
     <p>{{ product.description|truncatewords:10 }}</p>
     <p>${{ product.stock.price }}</p>
