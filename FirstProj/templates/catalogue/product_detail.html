@@ -16,6 +16,8 @@
     <form method="post" action="{% url 'add-to-basket' %}">
         {% csrf_token %}
         <input type="hidden" name="product_id" value="{{ product.id }}">
+        <input type="hidden" name="next" value="{{ request.build_absolute_url }}">
+        <input type="text" name="quantity">
         <button type="submit">Add to Basket</button>
     </form>
 {% endblock %}
