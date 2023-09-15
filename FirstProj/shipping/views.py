@@ -7,6 +7,8 @@ from shipping.forms import ShippingAddressForm
 
 
 def address_list(request):
+    # todo: Get all address for current user
+    # todo: pass to the right template
     return HttpResponse("Address list")
 
 
