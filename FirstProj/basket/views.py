@@ -14,6 +14,7 @@ def add_to_basket(request):
     # todo-4: add product to the user basket lines
     # todo-5: return to the 'next' url
 
+    # With Django Form Builder:
     response = HttpResponseRedirect(request.POST.get('next', '/'))
 
     basket = Basket.get_basket(request.COOKIES.get('basket_id', None))
@@ -25,6 +26,11 @@ def add_to_basket(request):
     if not basket.validate_user(request.user):
         raise Http404
 
+    form = AddToBasketForm(request.POST)
+    if form.is_valid():
+        form.save(basket=basket)
+
+    return response
     #     basket = Basket.objects.create()
     #     response.set_cookie('basket_id', basket.id)
     # else:
@@ -42,13 +48,7 @@ def add_to_basket(request):
     #     basket.user = request.user
     #     basket.save()
 
-    form = AddToBasketForm(request.POST)
-
-    if form.is_valid():
-        form.save(basket=basket)
-
-    return response
-
+    # ٔNo Django Form Builder:
     # response = HttpResponseRedirect(request.POST.get('next', '/'))
     #
     # basket_id = request.COOKIES.get('basket_id', None)
