@@ -1,24 +1,22 @@
 {% extends 'catalogue/base_catalogue.html' %}
 
-{% block title %}
-    {{ product.title|title }}
-{% endblock %}
-
 {% block data %}
     {#   for pi in product.images.all #}
-<!--        <img src="{{ pi.images.url }}" alt="image"> -->
+       <img src="{{ pi.images.url }}" alt="image">
     {# endfor #}
     <!--<img src="{{ product.images.all.0.image.url }}" alt="django image"> -->
-    <h3>{{ product.title }}</h3>
-    <p>{{ product.description|truncatewords:10 }}</p>
-    <p>${{ product.stock.price }}</p>
+    <h3>{{product.title|title}}</h3>
+    <p>{{product.description|truncatewords:1000}}</p>
+    <p>$ {{product.stock.price}}</p>
 
     <form method="post" action="{% url 'add-to-basket' %}">
         {% csrf_token %}
-        <input type="hidden" name="product_id" value="{{ product.id }}">
-        <input type="hidden" name="next" value="{{ request.build_absolute_url }}">
-        <input type="text" name="quantity">
+        {{ form.as_p }}
+        <input type="hidden" name="next" value="{{request.build_absolute_uri}}">
+<!--        <input type="hidden" name="product_id" value="{{ product.id }}">-->
+<!--        <input type="text" name="quantity">-->
         <button type="submit">Add to Basket</button>
     </form>
 {% endblock %}
 
+{% block title %}{{ product.title|title }}{% endblock %}

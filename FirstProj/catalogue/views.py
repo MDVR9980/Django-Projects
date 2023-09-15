@@ -3,6 +3,8 @@ from django.db.models import Q
 from django.http import HttpResponse, Http404
 from django.views.decorators.http import require_http_methods, require_GET, require_POST
 from django.shortcuts import render
+
+from basket.forms import AddToBasketForm
 from catalogue.models import Product, Category, Brand, ProductType
 from catalogue.utils import check_is_active, check_is_staff
 
@@ -39,19 +41,12 @@ def products_list(request):
 
 
 def product_detail(request, pk):
-    # try:
-    #     product = Product.objects.get(pk=pk)
-    # except Product.DoesNotExist:
-    #     try:
-    #         product = Product.objects.get(upc=pk)
-    #     except Product.DoesNotExist:
-    #         return HttpResponse("Product does not exist")  # use get!
+
     queryset = Product.objects.filter(is_active=True).filter(Q(pk=pk) | Q(upc=pk))
     if queryset.exists():
         product = queryset.first()
-    #     return HttpResponse(f"title: {product.title}")
-    # return HttpResponse("Product does not exist")
-        return render(request, 'catalogue/product_detail.html', {"product": product})
+        form = AddToBasketForm({"product": product.id, 'quantity': 1})
+        return render(request, 'catalogue/product_detail.html', {"product": product, "form": form})
     raise Http404
 
 
