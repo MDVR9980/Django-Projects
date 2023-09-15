@@ -1,12 +1,13 @@
 from django.contrib.auth.decorators import login_required
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
 from django.views.decorators.http import require_http_methods
 
 from shipping.forms import ShippingAddressForm
 
 
 def address_list(request):
-    pass
+    return HttpResponse("Address list")
 
 
 @login_required
@@ -18,6 +19,7 @@ def address_create(request):
             instance = form.save(commit=False)
             instance.user = request.user
             instance.save()
+            return redirect('address-list')
 
     else:
         form = ShippingAddressForm()
