@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Add new shipping address{% endblock %}
+
+{% block content %}
+    <h3>Add new shipping address</h3>
+
+    <form method="post" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <button type="submit">Save Address</button>
+    </form>
+
+<a href="{% url 'address-list' %}" style="text-decoration: none">Back to the list</a>
+{% endblock %}
