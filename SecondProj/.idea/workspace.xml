@@ -4,7 +4,70 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db76f27b-d3c3-4b8a-a3e8-02f476e71b53" name="Changes" comment="" />
+    <list default="true" id="db76f27b-d3c3-4b8a-a3e8-02f476e71b53" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/BankingPortal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/BankingPortal/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/BankingPortal/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/BankingPortal/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/BankingPortal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/BankingPortal/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/BankingPortal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/BankingPortal/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/BankingPortal/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/BankingPortal/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/finance/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/finance/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/finance/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/finance/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/finance/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/finance/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/finance/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/finance/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/finance/utils/zarinpal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/finance/utils/zarinpal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/finance/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/finance/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BankingPortal/templates/charge_wallet.html" beforeDir="false" afterPath="$PROJECT_DIR$/../BankingPortal/templates/charge_wallet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/.idea/DigitalMarketing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/.idea/DigitalMarketing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/DigitalMarketing/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/basket/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/basket/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/basket/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/basket/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/basket/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/basket/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/blog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/blog/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/blog/static/blog/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/blog/static/blog/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/blog/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/blog/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/catalogue/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/catalogue/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/catalogue/static/catalogue/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/catalogue/static/catalogue/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/catalogue/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/catalogue/templatetags/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/catalogue/templatetags/category_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/catalogue/templatetags/category_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/catalogue/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/catalogue/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/catalogue/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/catalogue/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/media/products/django.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/media/products/django.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/media/products/download.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/media/products/download.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/media/products/download_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/media/products/download_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/partner/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/partner/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/partner/static/partner/partner.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/partner/static/partner/partner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/shipping/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/shipping/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/shipping/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/shipping/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/shipping/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/shipping/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/catalogue/base_catalogue.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/catalogue/base_catalogue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/catalogue/partial/category_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/catalogue/partial/category_navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/catalogue/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/catalogue/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/catalogue/product_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/catalogue/product_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/shipping/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/shipping/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/shipping/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/shipping/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/templates/shipping/shippingaddress_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/templates/shipping/shippingaddress_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DigitalMarketing/transaction/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/../DigitalMarketing/transaction/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondProj/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecondProj/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondProj/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecondProj/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondProj/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecondProj/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondProj/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecondProj/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SecondProj/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecondProj/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,23 +105,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/mdvr9980/Public/Django-Projects/SecondProj/manage.py&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/mdvr9980/Public/Django-Projects/SecondProj",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.SecondProj">
     <configuration name="SecondProj" type="PythonConfigurationType" factoryName="Python">
       <module name="SecondProj" />
@@ -68,7 +131,6 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.11" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -128,6 +190,8 @@
       <workItem from="1692512110342" duration="2609000" />
       <workItem from="1694944559653" duration="2636000" />
       <workItem from="1694979113420" duration="2010000" />
+      <workItem from="1695023068882" duration="606000" />
+      <workItem from="1695497066158" duration="700000" />
     </task>
     <servers />
   </component>
@@ -135,6 +199,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SecondProj$SecondProj.coverage" NAME="SecondProj Coverage Results" MODIFIED="1694979997537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/SecondProj$SecondProj.coverage" NAME="SecondProj Coverage Results" MODIFIED="1695497739880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
